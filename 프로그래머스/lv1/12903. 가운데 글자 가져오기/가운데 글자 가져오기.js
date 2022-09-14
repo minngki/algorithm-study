@@ -6,7 +6,7 @@ function solution(s) {
 }
 
 
-// 개선점 : substr 을 안 쓰겠다는 고집, Math 꽤 어렵 
+// 개선점 : substr 을 안 쓰겠다는 고집, Math 꽤 어렵 -올림반올림 소수점 버리기에 대한 고찰..?이필요할듯
 // 1. substr(startIndex, length)
 // 2. splice(startIndex, endIndex)
 
