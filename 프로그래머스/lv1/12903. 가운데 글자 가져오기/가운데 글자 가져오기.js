@@ -4,4 +4,14 @@ function solution(s) {
     let oddIdx = len/2-1
     return (len %2!==0 ? s.slice(evenIdx,evenIdx+1) : s.slice(oddIdx,oddIdx+2))
 }
+
+
+// 개선점 : substr 을 안 쓰겠다는 고집, Math 꽤 어렵 -올림반올림 소수점 버리기에 대한 고찰..?이필요할듯
+// 1. substr(startIndex, length)
+// 2. splice(startIndex, endIndex)
+
+// function solution(s) {
+//     let idx = Math.ceil(s.length/2)-1
     
+//     return s.slice(idx,s.length %2!==0 ? idx+1 : idx+2)
+// }
