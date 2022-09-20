@@ -9,3 +9,9 @@ function solution(arr1, arr2) {
     }
     return sumArr
 }
+
+// 개선점: map을 이용한 풀이 ! 
+
+// function solution(arr1, arr2) {
+//     return arr1.map((x,i)=> x.map((y, j)=> y+arr2[i][j]))
+// }
