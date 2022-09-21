@@ -2,15 +2,9 @@ function solution(arr)
 {  
     let newArr =[]
    for (let i = 0 ; i < arr.length ; i++) {
-       if (arr[i]!==arr[i+1]) 
-       {newArr.push(arr[i])}
-       
-       // newArr.push(arr[i])
-       // for (let j = 1 ; j < arr.length ; j++) {
-       //     if (newArr[i]!==arr[j]){
-       //         break
-       //     }
-       // }
+       if (arr[i]!==arr[i+1]) {
+           newArr.push(arr[i])
+       }
    }
     return newArr
 }
