@@ -14,5 +14,5 @@ for i in range(N):
                 print("NO")
                 break
 
-    else:
+    else: # for-else: break 문에 걸리면 해당 구문이 실행되지 않음
         print("NO" if check else "YES")
