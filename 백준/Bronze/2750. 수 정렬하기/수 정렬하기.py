@@ -10,9 +10,6 @@ for num in sorted(num_list):
 
 
 def bubble_sort():
-    import sys
-    input = sys.stdin.readline
-    
     N=int(input())
     A=[]
     for _ in range(N):
