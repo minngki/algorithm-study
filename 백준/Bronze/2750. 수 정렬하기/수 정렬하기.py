@@ -7,5 +7,24 @@ for i in range(num):
 
 for num in sorted(num_list):
     print(num)
+
+
+def bubble_sort():
+    import sys
+    input = sys.stdin.readline
     
-   
+    N=int(input())
+    A=[]
+    for _ in range(N):
+        A.append(int(input()))
+    
+    
+    for i in range(N-1):
+        for j in range(N-1-i):
+            if A[j] > A[j+1]:
+                temp = A[j]
+                A[j] = A[j+1]
+                A[j+1] = temp
+    
+    for a in A:
+        print(a)
