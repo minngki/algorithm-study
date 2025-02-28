@@ -14,3 +14,7 @@ while deq:
         deq.rotate(-paper)
 
 print(' '.join(map(str, answer)))
+
+
+# -1 % 2 = 1 ( -1 = 2 * -1 + (나머지))
+# enumerate(반복을 지원하는 모든 객체, start index)
