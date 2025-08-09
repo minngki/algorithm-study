@@ -1,8 +1,13 @@
-def solution(nums):
-    p_length = len(nums)
-    max_get_length = len(nums)/2
-    unique_pket = list(set(nums))
-    unique_length = len(unique_pket)
-    print(p_length, max_get_length, unique_pket, unique_length)
-    return max_get_length if unique_length > max_get_length else unique_length
+from collections import Counter
 
+def solution(nums):
+    possible_cnt = len(nums)//2
+    center_type_cnt = len(set(nums))
+    
+    if center_type_cnt >= possible_cnt:
+        return possible_cnt
+    else:
+        return center_type_cnt
+    
+    
+        
