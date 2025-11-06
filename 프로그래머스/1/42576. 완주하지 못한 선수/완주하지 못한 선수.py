@@ -1,10 +1,10 @@
 from collections import Counter
 
 def solution(participant, completion):
-    p_count = Counter(participant)
-    c_count = Counter(completion)
+    counter_participant = Counter(participant)
+    counter_completion = Counter(completion)
     
-    for name in p_count:
-        if p_count[name] != c_count[name]:
+    for name in participant:
+        if counter_participant[name]!=counter_completion[name]:
             return name
         
